@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="relative z-10 text-center max-w-4xl px-4">
         {/* HEADLINE */}
         <h1 className="
-          text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight 
+          text-5xl sm:text-6xl md:text-7xl font-extrabold leading-none
           text-text-light dark:text-text-dark 
           mb-6
           animate-fade-in-up

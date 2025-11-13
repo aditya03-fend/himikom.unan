@@ -2,9 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Beranda } from "../pages";
 import { Background, Layout } from "../components";
 
+
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/himikom.unan">
       <Background />
       <Layout>
         <Routes>

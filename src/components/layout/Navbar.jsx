@@ -18,7 +18,7 @@ export default function Navbar() {
         rounded-2xl px-6 py-3 flex items-center justify-between
         glass-light inner-shadow-custom drop-shadow-custom backdrop-blur-xl rotate-0 z-50"
       >
-        <div className="font-semibold text-lg">Himikom</div>
+        <div className="font-semibold text-2xl">Himikom</div>
 
         {/* Menu Desktop */}
         <ul className="hidden md:flex gap-8 text-sm">

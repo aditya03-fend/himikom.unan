@@ -5,7 +5,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/himikom.unan",
+  base: "/himikom.unan/",
   plugins: [
     react({
       babel: {
