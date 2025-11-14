@@ -16,7 +16,7 @@ const ProgramCard = ({ imageUrl, title, description }) => {
       {/* 1. GAMBAR (Rasio 4:3) */}
       <div className="
         w-full 
-        aspect-[4/3] 
+        aspect-[4/3]
         overflow-hidden 
         rounded-sub 
         mb-4 
@@ -25,7 +25,7 @@ const ProgramCard = ({ imageUrl, title, description }) => {
         <img
           src={imageUrl || "https://via.placeholder.com/400x300?text=HIMIKOM"}
           alt={title || "Gambar Program"}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
@@ -42,7 +42,6 @@ const ProgramCard = ({ imageUrl, title, description }) => {
       <p className="
         text-text-secondary-light dark:text-text-secondary-dark 
         mb-4 
-        flex-grow  {/* Memastikan deskripsi mengisi ruang yg ada */}
       ">
         {description || "Deskripsi singkat program akan muncul di sini..."}
       </p>

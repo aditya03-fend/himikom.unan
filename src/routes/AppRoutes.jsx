@@ -5,7 +5,7 @@ import { Background, Layout } from "../components";
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter basename="/himikom.unan">
+    <BrowserRouter>
       <Background />
       <Layout>
         <Routes>

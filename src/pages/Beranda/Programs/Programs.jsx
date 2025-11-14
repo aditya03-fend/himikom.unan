@@ -39,8 +39,7 @@ const Programs = () => {
       {/* 1. JUDUL SECTION */}
       <div className="w-full fles justify-start">
         <TitleSection
-          title="Program Kerja Kami"
-          subtitle="Inilah inisiatif dan program unggulan yang kami jalankan untuk mendukung kreativitas dan inovasi mahasiswa."
+          title="Program Kami"
         />
       </div>
 

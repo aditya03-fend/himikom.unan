@@ -1,7 +1,6 @@
 import { TitleSection } from "@/components";
 import React from "react";
 
-
 const PROFILE_VIDEO_ID = "gMDSj4vd7fM";
 const PROFILE_VIDEO_URL = `https://www.youtube.com/watch?v=${PROFILE_VIDEO_ID}`;
 const THUMBNAIL_URL = `https://img.youtube.com/vi/${PROFILE_VIDEO_ID}/maxresdefault.jpg`;
@@ -23,6 +22,7 @@ const Profile = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="
+            rounded-2xl
               block relative 
               rounded-main 
               overflow-hidden 
@@ -65,9 +65,7 @@ const Profile = () => {
 
         <div className="md:w-1/2 animate-fade-in-up">
           {" "}
-          <TitleSection 
-          title="Profil"
-          />
+          <TitleSection title="Profil" />
           {/* 2. PARAGRAF DESKRIPSI */}
           <p
             className="

@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[80%]
+        className="fixed z-[101] top-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[80%]
         rounded-2xl px-6 py-3 flex items-center justify-between
         liquid-glass"
       >

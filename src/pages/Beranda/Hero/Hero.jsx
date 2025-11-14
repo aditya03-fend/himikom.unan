@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Asumsi Anda menggunakan react-router-dom
-import { Btn } from "../../components";
+import { Btn } from "@/components";
 
 const Hero = () => {
   return (

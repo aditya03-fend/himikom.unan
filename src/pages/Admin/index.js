@@ -1,2 +1,2 @@
-export { default as AddPrograms } from "./AddPrograms/AddPrograms"
-export { default as ProgramCard } from "./AddPrograms/ProgramCard"
+export { default as AddPrograms } from "./AddPrograms"
+export { default as ProgramCard } from "../Beranda/Programs/ProgramCard"
