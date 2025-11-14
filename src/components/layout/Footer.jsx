@@ -12,7 +12,7 @@ export default function Footer() {
     <footer
       className="w-full mt-20 py-10 flex flex-col items-center justify-center gap-6
       glass-light inner-shadow-custom drop-shadow-custom backdrop-blur-xl
-      rounded-2xl mx-auto w-[90%] md:w-[80%] text-center"
+      mx-auto text-center"
     >
       <nav>
         <ul className="flex flex-col md:flex-row gap-4 md:gap-8 text-sm">

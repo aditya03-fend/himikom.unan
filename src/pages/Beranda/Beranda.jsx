@@ -1,8 +1,13 @@
-import Hero from "./Hero";
+import { Hero, Profile, Programs, Performance } from "./";
 
 const Beranda = () => {
   return (
-    <Hero />
+    <>
+      <Hero />
+      <Profile />
+      <Programs />
+      <Performance />
+    </>
   );
 };
 

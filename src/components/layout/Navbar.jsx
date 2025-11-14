@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -16,7 +17,7 @@ export default function Navbar() {
       <nav
         className="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[80%]
         rounded-2xl px-6 py-3 flex items-center justify-between
-        glass-light inner-shadow-custom drop-shadow-custom backdrop-blur-xl rotate-0 z-50"
+        liquid-glass"
       >
         <div className="font-semibold text-2xl">Himikom</div>
 
@@ -24,9 +25,9 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-8 text-sm">
           {navItems.map((link, index) => (
             <li key={index}>
-              <a href={link.href} className="hover:text-white/80 transition">
+              <Link href={link.href} className="hover:text-white/80 transition cursor-pointer">
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

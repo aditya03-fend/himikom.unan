@@ -18,7 +18,7 @@ const Hero = () => {
         {/* HEADLINE */}
         <h1 className="
           text-5xl sm:text-6xl md:text-7xl font-extrabold leading-none
-          text-text-light dark:text-text-dark 
+          text-gray-200
           mb-6
           animate-fade-in-up
         ">
@@ -27,7 +27,7 @@ const Hero = () => {
 
         {/* SUB-HEADLINE / DESKRIPSI */}
         <p className="
-          text-lg sm:text-xl text-text-secondary-light dark:text-text-secondary-dark 
+          text-lg sm:text-xl text-gray-400
           mb-10 max-w-2xl mx-auto
           animate-fade-in-up delay-200
         ">
