@@ -1,6 +1,5 @@
 import React from "react";
-import { TitleSection } from "@/components"; // Sesuaikan path
-import { ProgramCard } from "@/pages/Admin"; // Sesuaikan path
+import { TitleSection, ProgramCard } from "@/components"; // Sesuaikan path
 
 // DATA DUMMY (Nantinya ini diambil dari API/Database)
 const DUMMY_PROGRAMS = [

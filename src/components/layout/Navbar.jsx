@@ -14,8 +14,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav
-        className="fixed z-[101] top-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[80%]
+      <nav className="fixed z-[101] top-4 left-1/2 -translate-x-1/2 w-[90%] md:w-[80%]
         rounded-2xl px-6 py-3 flex items-center justify-between
         liquid-glass"
       >
@@ -25,7 +24,10 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-8 text-sm">
           {navItems.map((link, index) => (
             <li key={index}>
-              <Link href={link.href} className="hover:text-white/80 transition cursor-pointer">
+              <Link
+                to={link.to}
+                className="hover:text-white/80 transition cursor-pointer"
+              >
                 {link.label}
               </Link>
             </li>
@@ -54,13 +56,17 @@ export default function Navbar() {
             : "opacity-0 pointer-events-none"
         }`}
       >
-          {navItems.map((link, index) => (
-            <li key={index}>
-              <a href={link.href} className="hover:text-white/80 transition">
-                {link.label}
-              </a>
-            </li>
-          ))}
+        {navItems.map((link, index) => (
+          <li key={index}>
+            <Link
+              to={link.to}
+              className="hover:text-white/80 transition"
+              onClick={() => setOpen(false)}
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
       </ul>
     </>
   );

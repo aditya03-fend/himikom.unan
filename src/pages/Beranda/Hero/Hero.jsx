@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Asumsi Anda menggunakan react-router-dom
 import { Btn } from "@/components";
+import { TentangKami } from "@/pages";
 
 const Hero = () => {
   return (
@@ -37,7 +37,7 @@ const Hero = () => {
         {/* CALL TO ACTION BUTTONS */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in-up delay-400">
           <Btn
-          to="/TentangKami"
+          to="/tentang-kami"
           >
             Tentang Kami
           </Btn>

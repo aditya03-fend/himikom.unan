@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { TitleSection } from '@/components'; // Sesuaikan path
-import { ProgramCard } from '@/pages/Admin'; // Sesuaikan path
+import { ProgramCard, TitleSection } from '@/components'; // Sesuaikan path
 
 const AddPrograms = () => {
   // State untuk menyimpan input form
@@ -106,7 +105,7 @@ const AddPrograms = () => {
           <h4 className="text-2xl font-bold text-center mb-4 text-text-light dark:text-text-dark">
             Live Preview
           </h4>
-          <ProgramCard 
+          <ProgramCard
             title={title}
             description={description}
             imageUrl={imageUrl}

@@ -1,5 +1,14 @@
-import { TitleSection } from "@/components"; // Sesuaikan path
-import PerformanceCard from "@/pages/Beranda/Prestasi/PerformanceCard"; // Sesuaikan path
+import { TitleSection, PerformanceCard } from "@/components"; // Sesuaikan path
+
+const performanceImages = import.meta.glob(
+  "@/assets/images/Performance/*.{jpg,jpeg,png,webp}",
+  { eager: true, import: "default" }
+);
+
+const getImage = (name) => {
+  return performanceImages[`/src/assets/images/Performance/${name}`];
+};
+
 
 // DATA DUMMY (Nantinya ini diambil dari API/Database)
 const DUMMY_PROGRAMS = [
@@ -8,7 +17,7 @@ const DUMMY_PROGRAMS = [
     title: "Afif Kisnadhya Putra",
     subTitle: "Google Student Ambasador",
     imageUrl:
-      "public/images/Performance/SnapInsta.to_549236315_17888673666346018_7845114067133122512_n.jpg",
+      "SnapInsta.to_549236315_17888673666346018_7845114067133122512_n.jpg",
     link: "/portfolio/devclass",
   },
   {
@@ -16,7 +25,7 @@ const DUMMY_PROGRAMS = [
     title: "Muhammad Nabil M.",
     subTitle: "Nusantara Creative Competation",
     imageUrl:
-      "public/images/Performance/SnapInsta.to_551185456_17889326340346018_1737473372670203826_n.jpg",
+      "SnapInsta.to_551185456_17889326340346018_1737473372670203826_n.jpg",
     link: "/portfolio/workshop-uiux",
   },
   {
@@ -24,7 +33,7 @@ const DUMMY_PROGRAMS = [
     title: "Afif Kisnadhya Putra",
     subTitle: "Nusantara Creative Competation",
     imageUrl:
-    "public/images/Performance/SnapInsta.to_551348745_17889326349346018_2692914504738200842_n.jpg",
+    "SnapInsta.to_551348745_17889326349346018_2692914504738200842_n.jpg",
     link: "/portfolio/esports",
   },
 ];
@@ -52,7 +61,7 @@ const Performance = () => {
               title={program.title}
               subTitle={program.subTitle}
               description={program.description}
-              imageUrl={program.imageUrl}
+              imageUrl={getImage(program.imageUrl)}
               link={program.link}
             />
           </div>
