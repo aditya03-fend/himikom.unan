@@ -1,58 +1,44 @@
-import { Btn } from '@/components';
-import React from 'react';
+import { Btn } from "@/components";
+import useMouseGlowRef from "@/hooks/useMouseGlowRef";
 
 const ProgramCard = ({ imageUrl, title, description }) => {
+  const { cardRef, handleMouseMove, handleLeave } = useMouseGlowRef();
+
   return (
-    <div className="
-      p-4 
-      flex flex-col 
-      h-full 
-      transition-all duration-300 
-      hover:shadow-2xl hover:-translate-y-1
-      inner-shadow-custom drop-shadow-custom backdrop-blur-xl
-      rounded-3xl
-    ">
-      
-      {/* 1. GAMBAR (Rasio 4:3) */}
-      <div className="
-        w-full 
-        aspect-[4/3]
-        overflow-hidden 
-        rounded-sub 
-        mb-4 
-        shadow-inner
-      ">
+    <div
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleLeave}
+      className="
+        glass
+        relative overflow-hidden
+        p-4 flex flex-col h-full
+        transition-all duration-300 
+        hover:shadow-2xl hover:-translate-y-1
+        rounded-3xl
+      "
+    >
+      <span className="glass-light"></span>
+
+      <div className="w-full aspect-4/3 overflow-hidden rounded-sub mb-4 shadow-inner relative">
         <img
           src={imageUrl || "https://via.placeholder.com/400x300?text=HIMIKOM"}
-          alt={title || "Gambar Program"}
+          alt={title || "Program Image"}
           className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 
-      {/* 2. JUDUL */}
-      <h3 className="
-        text-xl font-bold 
-        text-text-light dark:text-text-dark 
-        mb-2
-      ">
+      <h3 className="text-xl font-bold mb-2">
         {title || "Judul Program"}
       </h3>
 
-      {/* 3. DESKRIPSI */}
-      <p className="
-        text-text-secondary-light dark:text-text-secondary-dark 
-        mb-4 
-      ">
-        {description || "Deskripsi singkat program akan muncul di sini..."}
+      <p className="mb-4 grow">
+        {description || "Deskripsi singkat program..."}
       </p>
 
-      {/* 4. TOMBOL (Selalu di bawah) */}
       <div className="mt-2 w-full flex justify-end">
-        <Btn>
-            More
-        </Btn>
+        <Btn>More</Btn>
       </div>
-      
     </div>
   );
 };

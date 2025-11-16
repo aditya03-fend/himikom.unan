@@ -1,5 +1,4 @@
 import { TitleSection } from "@/components";
-import React from "react";
 
 const PROFILE_VIDEO_ID = "gMDSj4vd7fM";
 const PROFILE_VIDEO_URL = `https://www.youtube.com/watch?v=${PROFILE_VIDEO_ID}`;
@@ -70,7 +69,6 @@ const Profile = () => {
           <p
             className="
             text-lg
-            text-gray-400
             text-left
             max-w-none
           "

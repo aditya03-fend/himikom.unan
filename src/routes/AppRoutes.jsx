@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Beranda, TentangKami, ArticleList, PortfolioList } from "../pages";
+import { Beranda, TentangKami, ArticleList, PortfolioList, KerjaSama } from "../pages";
 import { Background, Layout } from "../components";
-
 
 const AppRoutes = () => {
   return (
@@ -15,6 +14,7 @@ const AppRoutes = () => {
           {/* <Route path="/artikel/:id" element={<ArtikelDetail />} /> */}
           <Route path="/portfolio" element={<PortfolioList />} />
           {/* <Route path="/modul" element={<ModulList />} /> */}
+          <Route path="/kerja-sama" element={<KerjaSama />} />
         </Routes>
       </Layout>
     </BrowserRouter>

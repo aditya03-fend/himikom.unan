@@ -9,8 +9,6 @@ const getImage = (name) => {
   return performanceImages[`/src/assets/images/Performance/${name}`];
 };
 
-
-// DATA DUMMY (Nantinya ini diambil dari API/Database)
 const DUMMY_PROGRAMS = [
   {
     id: 1,
@@ -41,7 +39,7 @@ const DUMMY_PROGRAMS = [
 const Performance = () => {
   return (
     <section className="container flex flex-col mx-auto px-4 sm:px-6 lg:px-8 py-16 gap-6">
-      {/* 1. JUDUL SECTION */}
+
       <div className="w-full fles justify-start">
         <TitleSection title="Prestasi Mahasiswa" />
       </div>

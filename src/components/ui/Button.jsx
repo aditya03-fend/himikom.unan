@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"; // Asumsi Anda menggunakan react-router-dom
+import { useMouseGlowRef } from "@/hooks";
+import { Link } from "react-router-dom";
 
 export default function Button({
   to,
@@ -7,22 +8,28 @@ export default function Button({
   className = "",
   ...props
 }) {
+  const { cardRef, handleMouseMove, handleLeave } = useMouseGlowRef();
+
   const base =
-    "px-8 py-3 rounded-full text-sm font-semibold transition active:scale-[0.97]";
+    "btn px-8 py-3 rounded-full text-sm font-semibold transition active:scale-[0.97]";
 
   const variants = {
     primary:
-      "bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:scale-[1.04] hover:-translate-y-0.5 duration-200",
+      "bg-blue-600 md:bg-blue-600/50 text-white hover:bg-blue-700 shadow-md hover:scale-[1.04] duration-200",
     glass:
-      "glass-light inner-shadow-custom drop-shadow-custom backdrop-blur-xl text-white border border-white/30 hover:bg-white/10 hover:scale-[1.04] hover:-translate-y-0.5 duration-200",
+      "nav text-white border border-white/30 hover:bg-white/10 hover:scale-[1.04] duration-200",
   };
 
   return (
     <Link
+      ref={cardRef}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleLeave}
       to={to}
       className={`${base} ${variants[variant]} ${className}`}
       {...props}
     >
+      <div className="btn-light"></div>
       {children}
     </Link>
   );

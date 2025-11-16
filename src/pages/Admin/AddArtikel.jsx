@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import TitleSection from '../../components/ui/TitleSection';
 
-// 1. Impor ReactQuill
 import ReactQuill from 'react-quill';
-// 2. Impor CSS untuk ReactQuill
 import 'react-quill/dist/quill.snow.css'; 
 
 const AddArtikel = () => {
@@ -13,13 +11,12 @@ const AddArtikel = () => {
   const [imageUrl, setImageUrl] = useState('');
   const [author, setAuthor] = useState('');
   
-  // 3. State untuk editor teks (konten HTML)
   const [content, setContent] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const newArticle = { 
-      id: Date.now(), // ID unik sementara
+      id: Date.now(),
       title, 
       slug, 
       excerpt, 
@@ -29,10 +26,6 @@ const AddArtikel = () => {
       date: new Date().toISOString() 
     };
     
-    // PENTING: Di aplikasi nyata, Anda akan mengirim 'newArticle' ini ke API
-    // fetch('/api/articles', { method: 'POST', body: JSON.stringify(newArticle) })
-    
-    // Karena kita tidak punya database, kita hanya menampilkannya di console
     console.log("Artikel Baru Siap Dikirim ke API:", newArticle);
     alert('Artikel berhasil dibuat! (Cek console F12)');
   };
@@ -91,14 +84,13 @@ const AddArtikel = () => {
           required
         ></textarea>
         
-        {/* 4. Implementasi Rich Text Editor */}
-        <div className="text-text-light dark:text-text-dark">
+        <div>
           <label className="block mb-2 font-medium">Isi Konten Artikel</label>
           <ReactQuill 
             theme="snow" 
             value={content} 
             onChange={setContent} 
-            className="bg-white" // Atur agar editornya terlihat jelas
+            className="bg-white"
           />
         </div>
 

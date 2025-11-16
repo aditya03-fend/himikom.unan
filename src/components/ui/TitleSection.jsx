@@ -11,7 +11,6 @@ const TitleSection = ({ title, subtitle, customClass }) => {
       <h2 className="
         text-4xl sm:text-5xl 
         font-bold 
-        text-gray-200
         mb-4
       ">
         {title}
@@ -20,7 +19,6 @@ const TitleSection = ({ title, subtitle, customClass }) => {
       {subtitle && (
         <p className="
           text-lg 
-          text-text-secondary-light dark:text-text-secondary-dark
         ">
           {subtitle}
         </p>
