@@ -3,6 +3,8 @@ export { default as TentangKami } from "./TentangKami/TentangKami"
 export { default as ArticleDetail } from "./Artikel/ArticleDetail"
 export { default as ArticleList } from "./Artikel/ArticleList"
 export { default as PortfolioList } from "./Portfolio/PortfolioList"
+export { default as ModulList } from "./Modul/ModulList"
 
 export { default as Kontak } from "@/pages/FooterPages/Kontak"
 export { default as PanduanOrganisasi } from "@/pages/FooterPages/PanduanOrganisasi"
+export { default as ArsipDokumen } from "@/pages/FooterPages/ArsipDokumen"

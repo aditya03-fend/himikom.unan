@@ -1,7 +1,7 @@
 import { Btn } from "@/components";
 import useMouseGlowRef from "@/hooks/useMouseGlowRef";
 
-const ProgramCard = ({ imageUrl, title, description, link }) => {
+const ProgramCard = ({ img, title, author, link }) => {
   const { cardRef, handleMouseMove, handleLeave } = useMouseGlowRef();
 
   return (
@@ -22,7 +22,7 @@ const ProgramCard = ({ imageUrl, title, description, link }) => {
 
       <div className="w-full aspect-4/3 overflow-hidden rounded-sub mb-4 shadow-inner relative">
         <img
-          src={imageUrl || "https://via.placeholder.com/400x300?text=HIMIKOM"}
+          src={img || "https://via.placeholder.com/400x300?text=HIMIKOM"}
           alt={title || "Program Image"}
           className="w-full h-full rounded-2xl object-cover transition-transform duration-300 group-hover:scale-105"
         />
@@ -31,11 +31,11 @@ const ProgramCard = ({ imageUrl, title, description, link }) => {
       <h3 className="text-xl font-bold mb-2">{title || "Judul Program"}</h3>
 
       <p className="mb-4 grow">
-        {description || "Deskripsi singkat program..."}
+        {author || "Deskripsi singkat program..."}
       </p>
 
       <div className="mt-2 w-full flex justify-end">
-        <Btn to={link}>More</Btn>
+        <Btn to={link}>Download</Btn>
       </div>
     </div>
   );

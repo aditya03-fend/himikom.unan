@@ -5,6 +5,7 @@ export { default as Layout } from "./layout/Layout";
 
 export { default as Navbar } from "./layout/Navbar";
 export { default as Footer } from "./layout/Footer";
+export { default as SideBar } from "./layout/SideBar";
 
 export { default as Btn } from "./ui/Button";
 export { default as TitleSection } from "./ui/TitleSection";
@@ -17,3 +18,5 @@ export { default as IconCard } from "./ui/IconCard"
 export { default as Input } from "./ui/Input"
 export { default as TextArea } from "./ui/TextArea"
 export { default as ContactCard } from "./ui/ContactCard"
+export { default as ArchiveDocumentCard } from "./ui/ArchiveDocumentCard"
+export { default as ModulCard } from "./ui/ModulCard"

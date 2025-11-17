@@ -70,3 +70,44 @@ export const DUMMY_CONTACT = [
     ],
   },
 ];
+
+export const DUMMY_DOCUMENT_ARCHIVE = [
+  {
+    id: 1,
+    img: "@/assets/images/Performance/SnapInsta.to_549236315_17888673666346018_7845114067133122512_n.jpg",
+    title: "Kerangka Proposal Seminar",
+    author: "Alrik Ahmed",
+    link: "https://google.com"
+  }
+]
+
+export const DUMMY_MODULS = [
+  {
+    id: 1,
+    slug: "dasar-dasar-html-css",
+    title: "Modul 1: Dasar HTML & CSS",
+    description: "Pelajari fondasi web. Mulai dari struktur HTML semantik hingga styling dasar dengan CSS.",
+    imageUrl: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=400&q=80"
+  },
+  {
+    id: 2,
+    slug: "javascript-untuk-pemula",
+    title: "Modul 2: JavaScript untuk Pemula",
+    description: "Hidupkan website Anda. Pelajari variabel, fungsi, DOM manipulation, dan event handling.",
+    imageUrl: "https://images.unsplash.com/photo-1579468118864-1b9ea6c4f742?w=400&q=80"
+  },
+  {
+    id: 3,
+    slug: "react-js-fundamental",
+    title: "Modul 3: React.js Fundamental",
+    description: "Membangun UI modern. Pahami konsep komponen, props, state, dan hooks.",
+    imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&q=80"
+  },
+  {
+    id: 4,
+    slug: "git-dan-github",
+    title: "Modul 4: Kontrol Versi (Git & GitHub)",
+    description: "Wajib bagi developer. Pelajari cara mengelola kode, kolaborasi, branch, merge, dan pull request.",
+    imageUrl: "https://images.unsplash.com/photo-1618401471353-b187131d5b71?w=400&q=80"
+  }
+];
