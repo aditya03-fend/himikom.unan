@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Beranda, TentangKami, ArticleList, PortfolioList, KerjaSama } from "../pages";
+import { Beranda, TentangKami, ArticleList, PortfolioList, Kontak, PanduanOrganisasi } from "../pages";
 import { Background, Layout } from "../components";
 
 const AppRoutes = () => {
@@ -14,7 +14,8 @@ const AppRoutes = () => {
           {/* <Route path="/artikel/:id" element={<ArtikelDetail />} /> */}
           <Route path="/portfolio" element={<PortfolioList />} />
           {/* <Route path="/modul" element={<ModulList />} /> */}
-          <Route path="/kerja-sama" element={<KerjaSama />} />
+          <Route path="/kontak" element={<Kontak />} />
+          <Route path="/panduan-organisasi" element={<PanduanOrganisasi />} />
         </Routes>
       </Layout>
     </BrowserRouter>

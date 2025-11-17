@@ -1,20 +1,20 @@
 import { useMouseGlowRef } from "@/hooks";
 
-const IconCard = ({ title, desc, icon }) => {
+const ContactCard = ({ position, name, children }) => {
   const { cardRef, handleMouseMove, handleLeave } = useMouseGlowRef();
   return (
     <div
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleLeave}
-      className="glass p-6 text-center animate-fade-in-up delay-200"
+      className="glass p-8 animate-fade-in-up delay-200 flex flex-col gap-4"
     >
       <div className="glass-light"></div>
-      {icon}
-      <h3 className="text-2xl font-bold mb-2">{title}</h3>
-      <p>{desc}</p>
+      <h2 className="text-2xl font-bold">{position}</h2>
+      <p className="text-lg">{name}</p>
+      {children}
     </div>
   );
 };
 
-export default IconCard;
+export default ContactCard;

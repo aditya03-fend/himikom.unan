@@ -65,7 +65,6 @@ const Profile = () => {
         <div className="md:w-1/2 animate-fade-in-up">
           {" "}
           <TitleSection title="Profil" />
-          {/* 2. PARAGRAF DESKRIPSI */}
           <p
             className="
             text-lg

@@ -1,7 +1,6 @@
 import React from "react";
-import { TitleSection, ProgramCard } from "@/components"; // Sesuaikan path
+import { TitleSection, ProgramCard } from "@/components";
 
-// DATA DUMMY (Nantinya ini diambil dari API/Database)
 const DUMMY_PROGRAMS = [
   {
     id: 1,
@@ -35,14 +34,12 @@ const DUMMY_PROGRAMS = [
 const Programs = () => {
   return (
     <section className="container flex flex-col mx-auto px-4 sm:px-6 lg:px-8 py-16 gap-6">
-      {/* 1. JUDUL SECTION */}
       <div className="w-full fles justify-start">
         <TitleSection
           title="Program Kami"
         />
       </div>
 
-      {/* 2. GRID KARTU PROGRAM */}
       <div
         className="
         grid 

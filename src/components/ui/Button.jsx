@@ -11,7 +11,7 @@ export default function Button({
   const { cardRef, handleMouseMove, handleLeave } = useMouseGlowRef();
 
   const base =
-    "btn px-8 py-3 rounded-full text-sm font-semibold transition active:scale-[0.97]";
+    "btn px-8 py-3 rounded-full text-sm font-semibold transition active:scale-[0.97] text-center";
 
   const variants = {
     primary:

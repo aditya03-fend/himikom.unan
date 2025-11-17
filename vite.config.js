@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
-  base: "/himikom.unan",   // <-- FIX PENTING
+  base: "/himikom.unan",
   plugins: [
     react({
       babel: {

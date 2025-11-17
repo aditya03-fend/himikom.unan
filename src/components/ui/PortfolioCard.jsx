@@ -48,7 +48,7 @@ const PortfolioCard = ({ link, imageUrl, title, author }) => {
             text-sm font-semibold 
             transition-all duration-300 hover:opacity-80 w-full text-center"
         >
-          Lihat Detail
+          Visit
         </Btn>
       </div>
     </div>

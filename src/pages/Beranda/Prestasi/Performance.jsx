@@ -44,7 +44,6 @@ const Performance = () => {
         <TitleSection title="Prestasi Mahasiswa" />
       </div>
 
-      {/* 2. GRID KARTU PROGRAM */}
       <div
         className="
         grid 

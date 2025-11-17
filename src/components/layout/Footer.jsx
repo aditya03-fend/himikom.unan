@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 const footerNavItems = [
   { to: "/arsip-dokumen", label: "Arsip Dokumen" },
   { to: "/panduan-organisasi", label: "Panduan Organisasi" },
-  { to: "/kontak", label: "Kontak" },
-  { to: "/kerja-sama", label: "Kerja Sama" },
+  { to: "/kontak", label: "Kontak & Kerja Sama" },
 ];
 
 export default function Footer() {

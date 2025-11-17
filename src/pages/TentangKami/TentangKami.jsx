@@ -105,17 +105,14 @@ const TentangKami = () => {
         </p>
       </section>
 
-      {/* === SECTION 2: VISI & MISI === */}
       <section className="py-16 sm:py-20 container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-          {/* KARTU VISI */}
           <AboutCard
             title="Visi Kami"
             desc="Menjadi himpunan mahasiswa informatika yang unggul, inovatif, dan
         berdampak, serta mampu menciptakan ekosistem belajar yang mendukung
         perkembangan teknologi dan karakter."
           />
-          {/* KARTU MISI */}
           <AboutCard title="Misi Kami">
             <ul
               className="
@@ -160,7 +157,6 @@ const TentangKami = () => {
       "
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Judul Section Ini */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2
               className="
@@ -180,9 +176,7 @@ const TentangKami = () => {
             </p>
           </div>
 
-          {/* Grid 3 Kolom */}
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
-            {/* Pilar 1: Edukasi */}
             <IconCard
               icon=<CodeIcon />
               title="Edukasi & Workshop"
@@ -207,7 +201,6 @@ const TentangKami = () => {
         </div>
       </section>
 
-      {/* === SECTION 4: CALL TO ACTION (CTA) === */}
       <section
         className="
         py-24 

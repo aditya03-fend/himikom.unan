@@ -30,7 +30,7 @@ const ArticleCard = ({ slug, imageUrl, title, excerpt, author, date }) => {
     >
       <div className="glass-light"></div>
 
-      <div className="w-full md:w-[90%] aspect-video rounded-2xl overflow-hidden rounded-sub mb-4 shadow-inner">
+      <div className="w-full md:w-[40%] aspect-video rounded-2xl overflow-hidden rounded-sub mb-4 shadow-inner">
         <img
           src={imageUrl || "https://via.placeholder.com/400x225?text=HIMIKOM"}
           alt={title || "Gambar Artikel"}

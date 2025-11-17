@@ -61,8 +61,6 @@ const ArticleDetail = () => {
         />
       </div>
 
-      {/* 4. Render KONTEN HTML */}
-      {/* Kita tambahkan class 'prose-content' untuk styling */}
       <div
         className="prose-content"
         dangerouslySetInnerHTML={{ __html: article.content }}
